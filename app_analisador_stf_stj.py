@@ -161,7 +161,7 @@ if analisar:
     with col2:
         st.markdown("#### Distribuição por Tribunal")
         fig2, ax2 = plt.subplots()
-        df["Tribunal"].value_counts().plot(kind="pie", autopct=\"%1.1f%%\", ax=ax2)
+        df["Tribunal"].value_counts().plot(kind="pie", autopct="%1.1f%%", ax=ax2)
         plt.title("Origem das Decisões")
         st.pyplot(fig2)
 
